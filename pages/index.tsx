@@ -29,13 +29,6 @@ const Home: NextPage = () => {
     }, 1000);
   };
 
-  // useEffect(() => {
-  //   let timer1 = setTimeout(() => setIsCopied(true), 1000);
-  //   return () => {
-  //     clearTimeout(timer1);
-  //   };
-  // }, [isCopied]);
-
   return (
     <div>
       <Head>

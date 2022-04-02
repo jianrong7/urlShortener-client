@@ -44,7 +44,7 @@ export default function UrlForm({
         try {
           if (isCustom) {
             const response = await axios.put(
-              `${process.env.NEXT_PUBLIC_SERVER}api/custom`,
+              `${process.env.NEXT_PUBLIC_SERVER_DEV}api/custom`,
               {
                 origUrl: values.url,
                 urlId: values.custom,
@@ -53,7 +53,7 @@ export default function UrlForm({
             setUrlResponse(response.data);
           } else {
             const response = await axios.post(
-              `${process.env.NEXT_PUBLIC_SERVER}api/short`,
+              `${process.env.NEXT_PUBLIC_SERVER_DEV}api/short`,
               {
                 origUrl: values.url,
               }
